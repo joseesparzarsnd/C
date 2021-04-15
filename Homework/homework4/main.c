@@ -155,41 +155,41 @@ int main(){
 				break;
 			case '\n':
 				if (l!=27&&rewritable==TRUE&&value==TRUE){
-                	for(i=FALSE;i<26;i++){
-                    	if (l==i){
-                    		if(forced==TRUE&&rewritable==TRUE)
-                    	        	rewritable=FALSE;
-                    	    	if(alpha[i]!=FALSE&&forced==TRUE)
-					printf("You can't change this value!\n");
-					if (alpha[i]!=FALSE&&rewritable==TRUE){
-					printf("Do you want to change the value of this variable? Type '1' for YES, and any other key for NO:\n");
-					if ((ans=getchar())!='1'){
-						pop();
-						printf("Operation cancelled.\n");
-					}else{
-						pop();
-						printf("New value: %d\n",number);
-						alpha[i]=number;
+                			for(i=FALSE;i<26;i++){
+                    				if (l==i){
+                    					if(forced==TRUE&&rewritable==TRUE)
+                    	        				rewritable=FALSE;
+                    	    				if(alpha[i]!=FALSE&&forced==TRUE)
+								printf("You can't change this value!\n");
+							if (alpha[i]!=FALSE&&rewritable==TRUE){
+								printf("Do you want to change the value of this variable? Type '1' for YES, and any other key for NO:\n");
+								if ((ans=getchar())!='1'){
+									pop();
+									printf("Operation cancelled.\n");
+								}else{
+									pop();
+									printf("New value: %d\n",number);
+									alpha[i]=number;
+								}
+								forced=FALSE;
+							}else{
+								alpha[i]=number;
+								forced=FALSE;
+							}
+                   				}
+                			}
+            			}else{
+            				if(ans=='1'){
+            					ans=NUMBER;
+            					continue;
 					}
-					forced=FALSE;
-					}else{
-					alpha[i]=number;
-					forced=FALSE;
-					}
-                   		}
-                	}
-            	}else{
-            		if(ans=='1'){
-            			ans=NUMBER;
-            			continue;
-					}
-                	printf("\t%.4g\n", pop());
-            	}
-           		l=27;
-            	rewritable=FALSE;
-            	value=FALSE;
-            	number=FALSE;
-            	break;
+                			printf("\t%.4g\n", pop());
+            			}	
+				l=27;
+				rewritable=FALSE;
+				value=FALSE;
+				number=FALSE;
+				break;
 			case '=':
 				rewritable=TRUE;		
 				break;
