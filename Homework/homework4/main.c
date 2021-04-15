@@ -34,108 +34,108 @@ int main(){
 				break;
 			case 'a':
 				l=0;
-            	push(alpha[l]);
-            	break;
-        	case 'b':
-        		l=1;
-            	push(alpha[l]);
-            	break;
-        	case 'c':
-        		l=2;
-            	push(alpha[l]);
-            	break;
-        	case 'd':
-        		l=3;
-            	push(alpha[l]);
-        	    break;
-      	  	case 'e':
-      	  		l=4;
-            	push(alpha[l]);
-     	       	break;
-     	   	case 'f':
-     	   		l=5;
-            	push(alpha[l]);
-    	        break;
-    	    case 'g':
-    	    	l=6;
-            	push(alpha[l]);
-      	      	break;
-      	  	case 'h':
-      	  		l=7;
-            	push(alpha[l]);
-      	      	break;
-      	  	case 'i':
-      	  		l=8;
-            	push(alpha[l]);
-          	  	break;
-        	case 'j':
-        		l=9;
-            	push(alpha[l]);
-            	break;
-        	case 'k':
-        		l=10;
-            	push(alpha[l]);
-            	break;
-        	case 'l':
-        		l=11;
-            	push(alpha[l]);
-            	break;
-        	case 'm':
-        		l=12;
-            	push(alpha[l]);
-            	break;
-        	case 'n':
-        		l=13;
-            	push(alpha[l]);
-            	break;
-       		case 'o':
-       			l=14;
-            	push(alpha[l]);
-            	break;
-        	case 'p':
-        		l=15;
-            	push(alpha[l]);
-            	break;
-        	case 'q':
-        		l=16;
-            	push(alpha[l]);
-            	break;
-        	case 'r':
-        		l=17;
-            	push(alpha[l]);
-            	break;
-        	case 's':
-        		l=18;
-            	push(alpha[l]);
-            	break;
-        	case 't':
-        		l=19;
-            	push(alpha[l]);
-            	break;
-        	case 'u':
-        		l=20;
-            	push(alpha[l]);
-            	break;
-        	case 'v':
-        		l=21;
-            	push(alpha[l]);
-            	break;
-        	case 'w':
-        		l=22;
-            	push(alpha[l]);
-            	break;
-        	case 'x':
-        		l=23;
-            	push(alpha[l]);
-            	break;
-        	case 'y':
-        		l=24;
-            	push(alpha[l]);
-            	break;
-        	case 'z':
-        		l=25;
-            	push(alpha[l]);
-            	break;
+            			push(alpha[l]);
+            			break;
+        		case 'b':
+        			l=1;
+            			push(alpha[l]);
+				break;
+				case 'c':
+				l=2;
+				push(alpha[l]);
+				break;
+        		case 'd':
+        			l=3;
+            			push(alpha[l]);
+        	    		break;
+      	  		case 'e':
+      	  			l=4;
+            			push(alpha[l]);
+     	       			break;
+     	   		case 'f':
+     	   			l=5;
+				push(alpha[l]);
+				break;
+    	    		case 'g':
+				l=6;
+				push(alpha[l]);
+				break;
+      	  		case 'h':
+      	  			l=7;
+				push(alpha[l]);
+				break;
+      	  		case 'i':
+      	  			l=8;
+            			push(alpha[l]);
+          	  		break;
+        		case 'j':
+        			l=9;
+				push(alpha[l]);
+				break;
+        		case 'k':
+        			l=10;
+            			push(alpha[l]);
+            			break;
+        		case 'l':
+        			l=11;
+            			push(alpha[l]);
+            			break;
+        		case 'm':
+        			l=12;
+				push(alpha[l]);
+				break;
+        		case 'n':
+        			l=13;
+				push(alpha[l]);
+				break;
+       			case 'o':
+       				l=14;
+				push(alpha[l]);
+				break;
+        		case 'p':
+        			l=15;
+				push(alpha[l]);
+				break;
+        		case 'q':
+        			l=16;
+				push(alpha[l]);
+				break;
+			case 'r':
+				l=17;
+				push(alpha[l]);
+				break;
+			case 's':
+				l=18;
+				push(alpha[l]);
+				break;
+			case 't':
+				l=19;
+				push(alpha[l]);
+				break;
+			case 'u':
+				l=20;
+				push(alpha[l]);
+				break;
+			case 'v':
+				l=21;
+				push(alpha[l]);
+				break;
+			case 'w':
+				l=22;
+				push(alpha[l]);
+				break;
+			case 'x':
+				l=23;
+				push(alpha[l]);
+				break;
+			case 'y':
+				l=24;
+				push(alpha[l]);
+				break;
+			case 'z':
+				l=25;
+				push(alpha[l]);
+				break;
 			case '+':
 				push(pop()+pop());
 				break;
@@ -157,25 +157,25 @@ int main(){
 				if (l!=27&&rewritable==TRUE&&value==TRUE){
                 	for(i=FALSE;i<26;i++){
                     	if (l==i){
-                    	    if(forced==TRUE&&rewritable==TRUE)
-                    	        rewritable=FALSE;
-                    	    if(alpha[i]!=FALSE&&forced==TRUE)
-                    	        printf("You can't change this value!\n");
-                        	if (alpha[i]!=FALSE&&rewritable==TRUE){
-                            	printf("Do you want to change the value of this variable? Type '1' for YES, and any other key for NO:\n");
-                            	if ((ans=getchar())!='1'){
-                                	pop();
-                                	printf("Operation cancelled.\n");
-                            	}else{
-                                	pop();
-                                	printf("New value: %d\n",number);
-                                	alpha[i]=number;
-                            	}
-                            	forced=FALSE;
-                        	}else{
-                            	alpha[i]=number;
-                            	forced=FALSE;
-                        	}
+                    		if(forced==TRUE&&rewritable==TRUE)
+                    	        	rewritable=FALSE;
+                    	    	if(alpha[i]!=FALSE&&forced==TRUE)
+					printf("You can't change this value!\n");
+					if (alpha[i]!=FALSE&&rewritable==TRUE){
+					printf("Do you want to change the value of this variable? Type '1' for YES, and any other key for NO:\n");
+					if ((ans=getchar())!='1'){
+						pop();
+						printf("Operation cancelled.\n");
+					}else{
+						pop();
+						printf("New value: %d\n",number);
+						alpha[i]=number;
+					}
+					forced=FALSE;
+					}else{
+					alpha[i]=number;
+					forced=FALSE;
+					}
                    		}
                 	}
             	}else{
