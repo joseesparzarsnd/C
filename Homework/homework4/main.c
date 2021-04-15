@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>		/*for atof()*/
 #include <ctype.h>
+#include <math.h>		/*for division with remainder*/
 #include "calc.h"
 
 #define MAXOP 100		/*max size of operand or operator*/
@@ -19,10 +20,10 @@ int main(){
 	char s[MAXOP];
 	char ans;
 	
-	printf("This calculator uses Reverse-Polish Notation, so instead of typing something like '3+4', you need to type '3 4 +'.\n");
+	printf("This calculator uses Reverse-Polish Notation, so instead of typing something like '3+4', you'll need to type '3 4 +'.\n");
 	printf("\t-To create a variable, you should follow this example format: 'a = 2'\n");
 	printf("\t-If you want to create a variable with a fixed value, you should use ':=' instead of '='\n");
-	printf("\t-To rewrite a variable, just type its name.\n\n");
+	printf("\t-To rewrite a variable, just follow this example 'a = new value'.\n\n");
 	while((type=getop(s))!=EOF){
 		switch(tolower(type)){
 			case NUMBER:
@@ -148,8 +149,15 @@ int main(){
 				break;
 			case '/':
 				op2=pop();
-				if(op2!=0.0)
+				if(op2!=FALSE)
 					push(pop()/op2);
+				else
+					printf("Error: Zero divisor.\n");
+				break;
+			case '%':
+				op2=pop();
+				if(op2!=FALSE)
+					push(fmod(pop(),op2));
 				else
 					printf("Error: Zero divisor.\n");
 				break;
@@ -162,7 +170,7 @@ int main(){
                     	    				if(alpha[i]!=FALSE&&forced==TRUE)
 								printf("You can't change this value!\n");
 							if (alpha[i]!=FALSE&&rewritable==TRUE){
-								printf("Do you want to change the value of this variable? Type '1' for YES, and any other key for NO:\n");
+								printf("Do you want to change the value of this variable? Type '1' for YES, and any other key for NO: ");
 								if ((ans=getchar())!='1'){
 									pop();
 									printf("Operation cancelled.\n");
@@ -201,5 +209,5 @@ int main(){
 				break;
 		}
 	}
-	return 0;
+	return FALSE;
 }
