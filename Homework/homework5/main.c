@@ -1,6 +1,6 @@
 //I took as references the book, rulgamer03, AbnerIO and the teacher's repositories.
 //I also looked at this site for ideas on how to implement some stuff: https://www.geeksforgeeks.org/cpp-implementation-minesweeper-game/
-//To make this program work, you can put all archives in the online gdb and it'll work.
+//To make this program work, you can put all archives in the online gdb and it'll work. Just make sure the header has the exact same name it has here.
 #include <stdio.h>
 #include <stdlib.h>     
 #include <ctype.h>      
