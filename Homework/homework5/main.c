@@ -1,6 +1,6 @@
 //I took as references the book, rulgamer03, AbnerIO and the teacher's repositories.
 //I also looked at this site for ideas on how to implement some stuff: https://www.geeksforgeeks.org/cpp-implementation-minesweeper-game/
-//To make this program work, you can put all archives in the online gdb and it'll work. Just make sure the header has the exact same name it has here.
+//To make this program work, you can put all archives in the online gdb and it'll work.
 #include <stdio.h>
 #include <stdlib.h>     
 #include <ctype.h>      
@@ -36,12 +36,20 @@ int playMinesweeper(){
     int play=TRUE; 
     int type;
     int entry;	//Checks if input is correct (TRUE) or wrong (FALSE);
+    int mines;
     
     char s[MAXOP];
     
     while(play==TRUE){
-        int mines = rand () % (MAX_MINES) + (MIN_MINES);    //Generates a random number of mines.
-        printf("\n\nNumber of mines: %d\n", mines);         
+        printf("\nInput the desired amount of mines (between 10 and 40): ");
+        scanf("%d", &mines);
+        if(mines>=MIN_MINES&&mines<=MAX_MINES)
+            printf("\n\nNumber of mines: %d\n", mines);    
+        else{
+            printf("\nPlease try again. ");
+            scanf("%d", &mines);
+            printf("\n\nNumber of mines: %d\n", mines); 
+        }
         int i, j;
         int** board;
         int** revealedCells; 
