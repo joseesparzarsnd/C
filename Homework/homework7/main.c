@@ -6,6 +6,7 @@
 //Es decir, si te registras y te dan el PIN 101, y te registras de nuevo y usas el PIN 102, cin y cout sólo funcionarán con el PIN 102.
 //Aún así, el programa imprimirá en un archivo .txt ambos pines.
 //El programa usa scanf, así que asegúrate de que introduzcas los datos como se te pide.
+//NOTA: Si usas OnlineGDB, notarás que el tiempo que imprime al usar cin, cout o logs es diferente al de tu computador.
 #include "header.h"
 
 int main(){
