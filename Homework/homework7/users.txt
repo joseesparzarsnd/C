@@ -1,0 +1,6 @@
+Registered user <juan> with PIN <101>
+Registered user <maría> with PIN <102>
+Registered user <yuno> with PIN <103>
+Registered user <mario> with PIN <104>
+Registered user <josé> with PIN <105>
+Registered user <wendy> with PIN <106>
