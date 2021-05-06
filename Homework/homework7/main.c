@@ -244,3 +244,6 @@ int printUserInfo(){
     fclose(userdata);
     menu();   
 }
+
+//Vi cómo funciona la librería time.h aquí: https://www.tutorialspoint.com/c_standard_library/time_h.htm.
+//También visité el repo de rulgamer para darme ideas sobre cómo registrar los días que trabajará el usuario.
