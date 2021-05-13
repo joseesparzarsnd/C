@@ -1,0 +1,34 @@
+Report designs.
+
+userinfo file:
+ username1 PIN1
+ username2 PIN2
+ username3 PIN3
+
+total worked hours file:
+ username1 PIN1 worked a total of x hours in week n.
+ username2 PIN2 worked a total of x hours in week n.
+ username3 PIN3 didn't work in week n!				
+
+attendance report file:
+ username1 PIN1 attended on week n: MON - X, TUES - X, WED - X, TUE - X, FRI - X, SAT - X
+ username2 PIN2 attended on week n: MON - X, TUES - X, WED - X, TUE - X, FRI - X, SAT - X
+ username3 PIN3 didn't show up to work in week n!
+
+logs file:
+ username1 PIN1 clocked in to work at Thu May 13 14:00:15 2021
+ username1 PIN1 clocked out of work at Thu May 13 14:02:17 2021
+ username2 PIN2 clocked in to work at Thu May 13 14:02:59 2021
+ username2 PIN2 clocked out of work at Thu May 13 14:04:10 2021
+ username3 PIN3 clocked in to work at Thu May 13 14:05:00 2021
+ username3 PIN3 clocked out of work at Thu May 13 14:05:30 2021
+
+performance report:
+ username1 PIN1: Performed excellently.
+ username2 PIN2: Performed well.
+ username3 PIN3: Performed terribly.
+
+balance report:
+ username1 PIN1 has made $XX.YY in week n.
+ username2 PIN2 has made $XX.YY in week n.
+ username3 PIN3 made no money in week n.
