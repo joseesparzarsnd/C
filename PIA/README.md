@@ -11,9 +11,9 @@ The program will keep the same commands I put in originally:
 ![image](https://user-images.githubusercontent.com/78566958/118166580-41f20a80-b3eb-11eb-8815-6061a628f9af.png)
 
 The difference will be that “wr”, “ar”, “logs” and “see” commands will no longer be accessible from the main menu. Also, there will be two new commands, “login” and 
-"logout" to log in and out of the system and see some special stuff. If an employee logs in, they will see the options “balance” and “twh”. “balance” command will 
-show them the amount of money they’ve made so far, and “twh” command will show them how many hours they’ve worked and if they’re on risk of being fired or not. Once
-they use "logout" the program will return to the main menu. 
+"logout" to log in and out of the system and see some special stuff. If an employee logs in, they will see the options “bal” and “twh”. “bal” command will show them
+the amount of money they’ve made so far, and “twh” command will show them how many hours they’ve worked and if they’re on risk of being fired or not. Once they use 
+"logout" the program will return to the main menu. 
 
 People with higher ranks, like the boss of a department, or an admin, will be able to access the “wr”, “ar”, “logs” and “see” commands after login in with a special pin.
 
