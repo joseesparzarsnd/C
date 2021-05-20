@@ -28,8 +28,24 @@ been fired, to calculate the performance of a user and update their data to fire
 ## Autoevaluation.
 
 Complexity - 3: It was more demanding to code than the last homeworks, despite this project being just an improved version of a homework.
+
 Functionality - 2: When you log in and try to print your balance or your total worked hours, it prints all, not just yours.
+
 Code - 3: I took the time to clean up my code and to simplify some functions.
+
 Storage - 2: It only stores info in .txt files and temporary variables.
+
 Documentation - 3:  I believe my documentation and the video are fine.
+
 CF: 13.
+
+
+## References:
+
+"The C Programming Language", by Brian W. Kernighan and Dennis M. Ritchie.
+
+C-Reference Card.
+
+[Information about strcpy](https://www.cplusplus.com/reference/cstring/strcpy/)
+
+[Information about scanf](https://medium.com/@zoha131/fun-with-scanf-in-c-3d7a8d310229)
