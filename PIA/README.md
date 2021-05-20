@@ -42,10 +42,14 @@ CF: 13.
 
 ## References:
 
-"The C Programming Language", by Brian W. Kernighan and Dennis M. Ritchie.
+Kernighan, R. W. D. B. M. (2021). The C Programming Language by Brian W. Kernighan, Dennis M. Ritchie (1988) Paperback. Prentice.
 
-C-Reference Card.
+Silverman, J. H. (2007, 15 Jan). The C Reference Card (ANSI). CRefCardVolume2.
 
 [Information about strcpy](https://www.cplusplus.com/reference/cstring/strcpy/)
 
 [Information about scanf](https://medium.com/@zoha131/fun-with-scanf-in-c-3d7a8d310229)
+
+[Information about handling files](https://www.freecodecamp.org/news/file-handling-in-c-how-to-open-close-and-write-to-files/)
+
+[Info on how to get date and time](https://stackoverflow.com/questions/1442116/how-to-get-the-date-and-time-values-in-a-c-program)
