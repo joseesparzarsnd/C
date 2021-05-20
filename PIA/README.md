@@ -18,7 +18,7 @@ employee works on the department 5 (administration departement) they'll have the
 options to print reports, like a total worked hours report or an attendance report. These reports contain the information of all the users that have been registered in the system
 and that have worked.
 
-Besides all of this, the program does also have functions to verify the PIN of a user by reading a file containing the info of all the users registered, to verify in a user has
+Besides all of this, the program does also have functions to verify the PIN of a user by reading a file containing the info of all the users registered, to verify if a user has
 been fired, to calculate the performance of a user and update their data to fire them if necessary and to print information stored on .txt files.
 
 ## Links.
