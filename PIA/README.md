@@ -14,7 +14,7 @@ Once they finish working, the system will calculate the performance of the emplo
 message letting the user know if they were fired or if they worked well enough. Then they will need to clock out. If a user is fired, they won't be able to clock in again.
 
 An employee can log into the system to know stuff like their balance or the total amount of hours they've worked; when they log in they will be sent to the "user menu". If the
-employee works on the department 5 (administration departement) they'll have the option to either go to the "user menu" or go to the "admin menu". The admin menu contains special
+employee works on the department 5 (administration department) they'll have the option to either go to the "user menu" or go to the "admin menu". The admin menu contains special
 options to print reports, like a total worked hours report or an attendance report. These reports contain the information of all the users that have been registered in the system
 and that have worked.
 
